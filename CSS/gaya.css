@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    line-height: 60px;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    width: 1120px;
+    margin: auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraph {
+    text-transform: uppercase;
+    font-weight: 1000;
+    
+    line-height: 100px;
+
+}
+
+.menu {
+    text-transform: capitalize;
+    font-size: 16px;
+    
+}
+
+.menu ul {
+    list-style-type: none;
+    
+    overflow: hidden;
+}
+
+.menu ul li {
+    float: left;
+    padding: 20px;
+    margin: auto;
+    padding-right: 10px;
+}
+
+.menu ul li a {
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+}
+.container-content {
+    width: 1120px;
+    margin: auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 25px;
+    position: relative;
+}
+
+.tulisan {
+    margin: 20px auto;
+}
+
+.tiga {
+    margin: 50px auto;
+}
+
+.dua ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+}
+
+.dua ul li {
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
+.dua ul li a {
+    color: black;
+}
+
+@media screen and (max-width : 768px) {
+    nav {
+        width: 100%;
+    }
+    .container {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-content {
+        display: block;
+        width: 100%;
+    }
+
+    .kedua {
+        margin: 40px 0 40px;
+    }
+}

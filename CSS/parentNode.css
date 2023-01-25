@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:#333;
+}
+
+.container {
+  width: 700px;
+  margin: 50px auto;
+  background: #555;
+}
+
+.card {
+  border-radius: 40px;
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  background: white;
+}
+
+.card img {
+  width: 120px;
+  border-radius: 50%;
+  float: left;
+  position:relative;
+}
+
+.nama {
+  text-transform: capitalize;
+}
+
+.card .nama,.card .telp {
+  padding: 10px;
+  line-height: 40px;
+}
+
+.ubah {
+  background-color: blue;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  text-decoration: none;
+  color: orange;
+  transition: .2s;
+}
+
+.close:hover {
+  color: red;
+  text-decoration: underline;
+}

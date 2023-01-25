@@ -1,0 +1,130 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 30px;
+  background: #1d2b3a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #FED049;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container judul {
+  text-align: center;
+  font-size: 20px;
+  color: #B33030;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 800px;
+  background: #CD0404;
+  border-radius: 10px;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: #FED049;
+  border-radius: 4px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 20px 25px;
+  width: 85%;
+  z-index: 1;
+}
+
+/* .kotak {
+  margin-top: 30px;
+} */
+
+.inputBox {
+  position: relative;
+  /* width: 250px; */
+  margin: 50px 0;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  height: 48px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  border-bottom: 2px solid orange;
+  outline: none;
+
+  font-size: 15px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  transition: .3s ease;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  padding: 0 3px;
+  pointer-events: none;
+  font-size: 1em;
+  transition: .5s ease;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  color: red;
+  transform: translateY(-40px);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 3px solid orange;
+  border-radius: 8px;
+  /* background: blue; */
+}

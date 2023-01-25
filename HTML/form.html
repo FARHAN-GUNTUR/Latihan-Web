@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/form.css">
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class=judul>
+      <h1>Register</h1>
+    </div>
+    <form action="" method="post">
+      <div class="user">
+        <div class="kotak">
+          <label for="fullname" class="nama">Full Name</label>
+          <input type="text" placeholder="Enter your name" id="fullname" required>
+        </div>
+        <div class="kotak">
+          <label for="username" class="nama">Username</label>
+          <input type="text" placeholder="Enter your username" id="username" required>
+        </div>
+        <div class="kotak">
+          <label for="email" class="nama">Email</label>
+          <input type="email" placeholder="Enter your email" id="email" required>
+        </div>
+        <div class="kotak">
+          <label for="phone" class="nama">Phone Number</label>
+          <input type="tel" placeholder="Enter your phone number" id="phone" required>
+        </div>
+        <div class="kotak">
+          <label for="password" class="nama">Password</label>
+          <input type="password" placeholder="Enter your password" id="password" required>
+        </div>
+        <div class="kotak">
+          <label for="confirm" class="nama">Confirm Password</label>
+          <input type="password" placeholder="Confirm your password" required id="confirm">
+        </div>
+      </div>
+      <div class="gender-detail">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        <input type="radio" name="gender" id="dot-3">
+        <span class="detail">Gender</span>
+        <div class="jenis">
+          <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer Not to Say</span>
+          </label>
+        </div>
+      </div>
+      <div class="tekan">
+        <button type="submit" value="Register">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

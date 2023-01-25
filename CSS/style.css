@@ -1,0 +1,122 @@
+*, html {
+    padding: 0;
+    margin:0;
+}
+body {
+    background-color: #eaeaea;
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    margin: auto;
+    z-index: 1;
+    top: 0;
+    box-sizing: border-box;
+    display:flex;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+    background-color: white;
+    font-size: 15px;
+    font-family:Arial Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container-div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid black;
+    line-height: 80px;
+}
+
+.container-div h1 {
+    padding: 8px;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.menu {
+    padding: 0px 15px;
+    text-transform: capitalize;
+}
+
+.menu ul {
+    line-height: 97px;
+}
+
+.menu ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #205295;
+}
+
+.rumah {
+    border: 1px solid #4B56D2;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.rumah:hover{
+    background-color:#EB455F;
+    color: white;
+}
+
+.gambar {
+    height: 350px;
+    background-image: url(https://img.freepik.com/free-photo/nobody-office-with-multiple-monitors-customer-service-desk-call-center-helpline-support-give-telecommunication-assistance-empty-helpdesk-with-client-telephony-reception_482257-46318.jpg?w=900&t=st=1670730619~exp=1670731219~hmac=e6fa97c16222ce4f3cd381d6c806040e08bd6994ff6e5c8ee39ac67d4d7e7f4d);
+    background-size: cover;
+    background-position: 0 -217px;
+    border-bottom: 4px solid black;
+}
+
+figcaption {
+    padding-inline-start: 8px;
+    padding-top: 0px;
+    font-weight: 800;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 13px;
+
+}
+
+.content {
+    box-sizing: border-box;
+    padding: 8px;
+    font-family:Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tulisan {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.penulis {
+    text-align: center;
+    background-color:#666;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.konten {
+    width: 640px;
+    float: left;
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+    margin-top: 30px;
+}

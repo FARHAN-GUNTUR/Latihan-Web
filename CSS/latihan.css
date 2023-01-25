@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  background-color: #FAF8F1;
+}
+
+.dinding {
+  background-color: black;
+}
+
+.ul-ubah {
+  background-color: orange;
+}
+
+.ubah {
+  background-color:coral;
+}
+
+nav {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  line-height: 80px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 2px solid black;
+}
+
+.container {
+  width: 1120px;
+  margin: auto;
+  position: relative;
+}
+
+.logo {
+  float: left;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+  color: #1C315E;
+  cursor: pointer;
+}
+
+.list {
+  float: right;
+  text-transform: capitalize;
+}
+
+.list ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.list ul li a {
+  color:#1C315E;
+  text-decoration: none;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.list ul li a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+section {
+  display: flex;
+  margin: 50px auto;
+}
+
+p {
+  line-height: 25px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tengah {
+  width: 100%;
+  text-align: center;
+}
+
+.satan {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gambar {
+  width: 25%;
+  margin: 50px 0;
+}
+
+.gambar img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.gbr {
+  width: 20%;
+  margin: 50px 0;
+}
+
+.gbr img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.daftar {
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.tentang {
+  width: 20%;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+}
+
+footer h1 {
+  font-size: 20px;
+}
+
+form {
+  padding: 20px;
+}
+
+label {
+  display: block;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .gambar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .gbr {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .rumah {
+    flex-wrap: wrap;
+  }
+  .tentang {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
